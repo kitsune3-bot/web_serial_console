@@ -1,0 +1,15 @@
+services:
+  web_serial_console:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web_serial_console
+    network_mode: "host"
+    devices:
+      - "/dev/ttyUSB0:/dev/ttyUSB0"
+    secrets:
+      - config
+
+secrets:
+  config:
+    file: ./config.json

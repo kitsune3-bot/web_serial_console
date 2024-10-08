@@ -1,0 +1,6 @@
+{
+    "macAddr": "xx:xx:xx:xx:xx:xx",
+    "ttyPath": "/dev/ttyUSB0",
+    "baudRate": 115200,
+    "port": 3000
+}
