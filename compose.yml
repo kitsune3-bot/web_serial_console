@@ -9,7 +9,7 @@ services:
       - "/dev/ttyUSB0:/dev/ttyUSB0"
     secrets:
       - config
-
+    restart: always
 secrets:
   config:
     file: ./config.json
